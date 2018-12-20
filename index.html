@@ -65,7 +65,12 @@
 
     </section>
     <section class="sec2">
-            <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px;    background: #00000070 !important;">
+            <div                            
+            data-sal-duration="1200"
+            data-sal="fade"
+            data-sal-delay="600"
+            data-sal-easing="ease-out-bounce"
+            class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px;    background: #00000070 !important;">
                     <a href="#" title="Home " class="w3-bar-item w3-button"><i class="fas fa-home"></i></a> 
                     <a href="#"onclick="document.getElementById('id01').style.display='block'"  title="Sing In" class="w3-bar-item w3-button"><i class="fas fa-sign-in-alt"></i></a>                     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
                     <a href="#" title="Facebook" class="w3-bar-item w3-button"><i class="fab fa-facebook"></i></a> 
@@ -100,13 +105,20 @@
       <div style="margin-left:70px;">
             <div  class="w3-container">
                   <form action="" method="post">
-                        <div class="registration">
+                        <div
+                        data-sal-duration="1200"
+                        data-sal="fade"
+                        data-sal-delay="1000"
+                        data-sal-easing="ease-out-bounce"
+                        class="registration">
                                 <h2 class="ml2">Type Your Email For Registration</h2>
                             <input type="email" placeholder="Email" name="emailaddress" id="email" size="30" required>
-                            <input type="submit">
+                            <input class="" type="submit">
+                            <div class="iphone">
+                                    <img src="/assents/img/iphone.png" alt="">
+                                </div>
                         </div>
                   </form>
-
             </div>
         </div>
     </section>

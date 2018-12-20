@@ -139,12 +139,28 @@
   }
   
   input[type=email]:focus {
-	width: 60%;
+	width: 50%;
 	outline: none;
   }
+  input[type=submit]{
+	background: rgba(2, 248, 113, 0.897);
+	color: #fff;
+	font-family: tahoma,geneva,algerian;
+	height: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 12px;
+	border: 1px solid rgba(2, 248, 113, 0.897);
+}
   
   .registration h2{
 	  font-size: 20px;
 	  color: rgba(2, 248, 113, 0.897);
 
+  }
+  .iphone img{
+	  width: 250px;
+	  height: 450px;
+	  margin-left: 761px;
+    margin-top: -199px;
   }
