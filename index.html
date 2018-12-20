@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assents/css/sec1.css">    
+    <link rel="stylesheet" href="assents/css/sec2.css">    
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="/assents/js/jquery.fullpage.js"></script>
+
+  
+</head>
+<body>
+<div id="fullpage">
+    <section class="sec1">
+                            <ul>
+                        <li
+                        data-sal-duration="1000"
+                        data-sal="fade"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce">
+                        <img class="logo" src="/assents/img/Forum Name.svg" alt="websiteLogo"></li>
+                        <li class="regbutt" 
+                        data-sal-duration="1000"
+                        data-sal="fade"
+                        data-sal-delay="800"
+                        data-sal-easing="ease-out-bounce">
+                        <a href="#news">Registration</a></li>
+                        <li class="loginbutt"
+                        data-sal-duration="1000"
+                        data-sal="fade"
+                        data-sal-delay="600"
+                        data-sal-easing="ease-out-bounce">
+                        <a href="#news">Login</a></li>
+                        <li class="aboutbutt"           
+                        data-sal-duration="1000"
+                        data-sal="fade"
+                        data-sal-delay="400"
+                        data-sal-easing="ease-out-bounce">
+                        <a href="#contact">About</a></li>
+                        <li class="homebutt"
+                        data-sal-duration="1000"
+                        data-sal="fade"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce">
+                        <a href="#about">Home </a></li>
+                      </ul>  
+                        <div class="nextsection"
+                            data-sal-duration="500"
+                            data-sal="fade"
+                            data-sal-delay="600"
+                            data-sal-easing="ease-out-bounce">
+                                    <a href="#"><img src="/assents/img/Button1.svg"></a>
+                        </div>  
+        <div class="welcometext"
+        data-sal-duration="1000"
+        data-sal="fade"
+        data-sal-delay="1000"
+        data-sal-easing="ease-out-bounce">  
+            <img src="/assents/img/One Of The Best Gaming Forum.svg" alt="Error">
+        </div>
+
+    </section>
+
+    <section class="sec2">
+
+
+                <div class="nextsection"
+                    data-sal-duration="500"
+                    data-sal="fade"
+                    data-sal-delay="600"
+                    data-sal-easing="ease-out-bounce">
+                            <a href="#"><img src="/assents/img/Button1.svg"></a>
+                </div>  
+
+
+    </section>
+
+
+
+
+</div>
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+     sal({
+        once: false,
+    });
+    $('#fullpage').fullpage();
+    </script>  
+</body>
+</html>
