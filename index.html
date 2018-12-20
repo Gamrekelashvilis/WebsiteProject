@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="/assents/js/jquery.fullpage.js"></script>
-
-  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 <div id="fullpage">
@@ -53,7 +53,7 @@
                             data-sal="fade"
                             data-sal-delay="600"
                             data-sal-easing="ease-out-bounce">
-                                    <a href="#sec2"><img src="/assents/img/Button1.svg"></a>
+                                <h1 class="ml2">Scroll Down</h1>
                         </div>  
         <div class="welcometext"
         data-sal-duration="1000"
@@ -64,32 +64,93 @@
         </div>
 
     </section>
+    <section class="sec2">
+            <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px;    background: #00000070 !important;">
+                    <a href="#" title="Home " class="w3-bar-item w3-button"><i class="fas fa-home"></i></a> 
+                    <a href="#"onclick="document.getElementById('id01').style.display='block'"  title="Sing In" class="w3-bar-item w3-button"><i class="fas fa-sign-in-alt"></i></a>                     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+                    <a href="#" title="Facebook" class="w3-bar-item w3-button"><i class="fab fa-facebook"></i></a> 
+                    <a href="#" title="Discord" class="w3-bar-item w3-button"><i class="fab fa-discord"></i></a> 
+                  </div>
+<div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+              <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <img src="/assents/img/Home.svg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>          
+      <div style="margin-left:70px;">
+            <div  class="w3-container">
+                  <form action="" method="post">
+                        <div class="registration">
+                                <h2 class="ml2">Type Your Email For Registration</h2>
+                            <input type="email" placeholder="Email" name="emailaddress" id="email" size="30" required>
+                            <input type="submit">
+                        </div>
+                  </form>
 
-    <section id="sec2" class="sec2">
-
-
-                <div class="nextsection"
-                    data-sal-duration="500"
-                    data-sal="fade"
-                    data-sal-delay="600"
-                    data-sal-easing="ease-out-bounce">
-                            <a href="#"><img src="/assents/img/Button1.svg"></a>
-                </div>  
-
-
+            </div>
+        </div>
     </section>
 
 
-
-
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
-     sal({
-        once: false,
-    });
-    $('#fullpage').fullpage();
+        sal({
+    once: false,
+});
+$('#fullpage').fullpage();
+$('.ml2').each(function(){
+$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+anime.timeline({loop: true})
+.add({
+  targets: '.ml2 .letter',
+  scale: [4,1],
+  opacity: [0,1],
+  translateZ: 0,
+  easing: "easeOutExpo",
+  duration: 950,
+  delay: function(el, i) {
+    return 70*i;
+  }
+}).add({
+  targets: '.ml2',
+  opacity: 0,
+  duration: 1000,
+  easing: "easeOutExpo",
+  delay: 1000
+});
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>  
 </body>
 </html>

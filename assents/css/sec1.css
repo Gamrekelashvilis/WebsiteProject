@@ -3,7 +3,7 @@ body{
 padding: 0;
 margin: 0;
 height: 100%;
-background:url(../img/bg.jpg) center fixed no-repeat;
+background:url(../img/sec2.jpg) center fixed no-repeat;
 background-size: cover;
 }
 #fullpage {
@@ -15,9 +15,8 @@ background-size: cover;
 .sec1{
     height: 100%;
     position: relative;
-}
-.sec2{
-    background:red;
+    background:url(../img/bg.jpg) center fixed no-repeat;
+    background-size: cover;
 }
 ul {
     list-style-type: none;
@@ -56,10 +55,7 @@ ul {
 .nextsection {
     position: absolute;
     bottom: 0;
-    left:48%;
-}
-.nextsection img{
-    width: 50px;
+    left:38%;
 }
 .welcometext{
 position: absolute;
@@ -69,3 +65,15 @@ top: 30%;
 .welcometext img{
     width: 500px;
 }
+.ml2 {
+    font-weight: 900;
+    font-size: 50px;
+    color: blue;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
