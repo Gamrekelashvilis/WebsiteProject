@@ -28,25 +28,19 @@
                         data-sal="fade"
                         data-sal-delay="800"
                         data-sal-easing="ease-out-bounce">
-                        <a href="#news">Registration</a></li>
+                        <a href="#">Registration</a></li>
                         <li class="loginbutt"
                         data-sal-duration="1000"
                         data-sal="fade"
                         data-sal-delay="600"
                         data-sal-easing="ease-out-bounce">
-                        <a href="#news">Login</a></li>
-                        <li class="aboutbutt"           
-                        data-sal-duration="1000"
-                        data-sal="fade"
-                        data-sal-delay="400"
-                        data-sal-easing="ease-out-bounce">
-                        <a href="#contact">About</a></li>
+                        <a href="#">Login</a></li>
                         <li class="homebutt"
                         data-sal-duration="1000"
                         data-sal="fade"
                         data-sal-delay="200"
                         data-sal-easing="ease-out-bounce">
-                        <a href="#about">Home </a></li>
+                        <a href="index.html">Home</a></li>
                       </ul>  
                         <div class="nextsection"
                             data-sal-duration="500"
@@ -122,6 +116,32 @@
             </div>
         </div>
     </section>
+    <section class="sec3">
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+      
+      <div id="main">
+      
+      <div class="w3-teal">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge left" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <h1>asddddddddddddd</h1>
+        </div>
+      </div>
+      
+      
+      <div class="w3-container">
+      <p>In this example, the sidebar is hidden (style="display:none")</p>
+      </div>
+      
+      </div>
+      
+    </section>
 
 
 </div>
@@ -164,5 +184,18 @@ window.onclick = function(event) {
   }
 }
     </script>  
+    <script>
+    function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+    </script>
 </body>
 </html>
